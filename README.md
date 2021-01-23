@@ -15,6 +15,10 @@ This will install all dependencies along with the custom nova tool.
 
 ##### After this follow the listed steps:
 - Create a .env file by copying .env.example and update database config details like database name, username and password
+- Generate APP_KEY
+```bash
+php artisan key:generate
+```
 - Run migrations to create table
 ```bash
 php artisan migrate
